@@ -1,0 +1,71 @@
+.card {
+  overflow: hidden;
+  width: 20vw;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+
+  .card-bg {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .program-info {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+    .card-name {
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      margin-bottom: 20px;
+    }
+
+    .buttonsWrapper {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        font-family: inherit;
+        font-size: 14px;
+        background-color: inherit;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        transition: 300ms;
+
+        &:hover {
+          background-color: #ffffff;
+          color: #141414;
+          border: 2px solid #141414;
+          transform: scale(1.1);
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
+
+.A {
+  .card-bg {
+    background-image: url("../../assets/program-card__bg-1.jpg");
+  }
+}
+.B {
+  .card-bg {
+    background-image: url("../../assets/program-card__bg-2.jpg");
+  }
+}
+.C {
+  .card-bg {
+    background-image: url("../../assets/program-card__bg-3.jpg");
+  }
+}

@@ -1,0 +1,25 @@
+.aboutProject {
+  display: flex;
+  align-items: center;
+  gap: 10vw;
+
+  iframe {
+    width: 800px;
+    height: 450px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 25%;
+
+    h3 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}

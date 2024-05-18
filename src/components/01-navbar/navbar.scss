@@ -1,0 +1,49 @@
+.navbar {
+  position: sticky;
+  overflow: visible;
+  top: 0px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 calc(7.5vw - 8px);
+  height: 7.5vh;
+  max-height: 100px;
+  background-color: transparentize($color: #141414, $amount: 0.25);
+
+  .logo {
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    transition: 300ms;
+    &:hover {
+      transform: scale(1.05);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+    li {
+      transition: 300ms;
+      &:hover {
+        transform: scale(1.05);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+      a {
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+}

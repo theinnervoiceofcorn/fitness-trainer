@@ -1,0 +1,49 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .programs-filter {
+    display: flex;
+    gap: 5px;
+
+    .allCategories {
+      margin-right: 20px;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: 18px;
+      background-color: inherit;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      border-radius: 7.5px;
+      padding: 7.5px;
+      cursor: pointer;
+      transition: 300ms;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #141414;
+        border: 2px solid #141414;
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+
+    button.active {
+      background-color: #ffffff;
+      color: #141414;
+      border: 2px solid #141414;
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    // align-content: space-between;
+    gap: 30px;
+  }
+}
