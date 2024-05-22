@@ -1,10 +1,5 @@
-import { Navbar } from "../../components";
-import {
-  AboutProject,
-  Header,
-  ProgramCardContainer,
-  // Programs,
-} from "../../containers";
+import { Footer, Navbar } from "../../components";
+import { AboutProject, Header, Programs } from "../../containers";
 
 export const MainPage = () => {
   return (
@@ -12,8 +7,8 @@ export const MainPage = () => {
       <Navbar />
       <Header />
       <AboutProject />
-      {/* <Programs /> */}
-      <ProgramCardContainer />
+      <Programs />
+      <Footer />
     </>
   );
 };

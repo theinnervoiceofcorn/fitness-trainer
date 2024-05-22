@@ -1,25 +1,36 @@
 .aboutProject {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10vw;
-
-  iframe {
-    width: 800px;
-    height: 450px;
-  }
+  gap: 3vh;
 
   &__text {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 25%;
+    gap: 0.5vh;
+    max-width: 30%;
 
     h3 {
-      font-size: 24px;
+      // margin-bottom: 1vh;
     }
 
     p {
-      font-size: 18px;
+      // font-size: inherit;
+    }
+  }
+}
+
+@media screen and (width < 1280px) {
+  .aboutProject {
+    flex-direction: column;
+
+    .youtube-video {
+      width: 100%;
+    }
+
+    &__text {
+      max-width: 100%;
+      text-align: center;
     }
   }
 }

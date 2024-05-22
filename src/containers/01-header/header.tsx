@@ -1,23 +1,20 @@
-// import { Navbar } from "../../components";
 import "./header.scss";
 
 export const Header = () => {
   return (
     <section className="header">
-      {/* <Navbar /> */}
       <header>
         <div className="header-content">
-          <h1>Lorem ipsum dolor sit amet</h1>
           <div className="header-text">
+            <h1>Lorem ipsum dolor sit amet</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-              officia voluptas temporibus, architecto neque eos beatae. At eaque
-              iusto, ab molestiae voluptatibus hic earum obcaecati rerum, quis
-              sint, nostrum explicabo!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias a
+              iure corporis veritatis, debitis sequi sed soluta aliquam dicta
+              necessitatibus?
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim
-              pariatur, maiores explicabo delectus iusto.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
+              dolore?
             </p>
           </div>
         </div>

@@ -1,46 +1,40 @@
-import { ProgramCard } from "../../components";
+import React from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store/store";
+import { ProgramCard, ProgramsFilter } from "../../components";
 import { PROGRAMS_TYPE_A, PROGRAMS_TYPE_B, PROGRAMS_TYPE_C } from "./data";
 import "./programs.scss";
-import "../../components/03-program-card/program-card.scss";
 
-const data = { PROGRAMS_TYPE_A, PROGRAMS_TYPE_B, PROGRAMS_TYPE_C };
+export const Programs: React.FC = () => {
+  const { selectedCategories, showAllCategories } = useSelector(
+    (state: RootState) => state.filter
+  );
 
-export const Programs = () => {
+  const programCards = [
+    ...PROGRAMS_TYPE_A,
+    ...PROGRAMS_TYPE_B,
+    ...PROGRAMS_TYPE_C,
+  ];
+
   return (
     <section className="programs">
-      {data &&
-        data.PROGRAMS_TYPE_A.map((program) => (
-          <ProgramCard
-            // imageSource={program.imageSource}
-            // imageAltText={program.imageAltText}
-            className={program.className}
-            cardName={program.cardName}
-            cardDescription={program.cardDescription}
-            programPrice={program.programPrice}
-          />
-        ))}
-      {data &&
-        data.PROGRAMS_TYPE_B.map((program) => (
-          <ProgramCard
-            // imageSource={program.imageSource}
-            // imageAltText={program.imageAltText}
-            className={program.className}
-            cardName={program.cardName}
-            cardDescription={program.cardDescription}
-            programPrice={program.programPrice}
-          />
-        ))}
-      {data &&
-        data.PROGRAMS_TYPE_C.map((program) => (
-          <ProgramCard
-            // imageSource={program.imageSource}
-            // imageAltText={program.imageAltText}
-            className={program.className}
-            cardName={program.cardName}
-            cardDescription={program.cardDescription}
-            programPrice={program.programPrice}
-          />
-        ))}
+      <ProgramsFilter />
+      <div className="cards-container">
+        {programCards
+          .filter(
+            (card) =>
+              showAllCategories || selectedCategories.includes(card.className)
+          )
+          .map((card, index) => (
+            <ProgramCard
+              key={index}
+              className={card.className}
+              cardName={card.cardName}
+              cardDescription={card.cardDescription}
+              programPrice={card.programPrice}
+            />
+          ))}
+      </div>
     </section>
   );
 };

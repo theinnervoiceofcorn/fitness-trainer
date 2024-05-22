@@ -1,0 +1,36 @@
+.programs-filter {
+  display: flex;
+  gap: 1vw;
+
+  .allCategories {
+    margin-right: 1.5vw;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: inherit;
+    padding: 5px;
+    border: 2px solid #ffffff;
+    font-family: inherit;
+    font-size: calc(var(--ft-sz) * 0.9);
+    color: #ffffff;
+    border-radius: 7.5px;
+    transition: 300ms;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #141414;
+      border: 2px solid #141414;
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  button.active {
+    background-color: #ffffff;
+    color: #141414;
+    border: 2px solid #141414;
+  }
+}

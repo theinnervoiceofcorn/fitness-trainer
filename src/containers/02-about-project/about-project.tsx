@@ -4,11 +4,7 @@ import "./about-project.scss";
 export const AboutProject = () => {
   return (
     <section className="aboutProject">
-      <YoutubeVideo
-        width="1120"
-        height="630"
-        embedID="aM0Swf-zsw0?si=pVDHydKCDBvrlDij"
-      />
+      <YoutubeVideo embedID="aM0Swf-zsw0?si=pVDHydKCDBvrlDij" />
       <div className="aboutProject__text">
         <h3>Lorem, ipsum dolor sit amet consectetur adipisicing</h3>
         <p>

@@ -6,10 +6,10 @@ export const Navbar = () => {
       <a className="logo">ProjectName</a>
       <ul>
         <li>
-          <a href="#">NavbarTab #1</a>
+          <a href="#">NavbarTab</a>
         </li>
         <li>
-          <a href="#">NavbarTab #2</a>
+          <a href="#">NavbarTab</a>
         </li>
       </ul>
     </nav>

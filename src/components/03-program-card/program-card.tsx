@@ -20,9 +20,7 @@ export const ProgramCard = ({
         <h3 className="card-name">{cardName}</h3>
         <div className="card-description">{cardDescription}</div>
         <div className="buttonsWrapper">
-          <button className="button-primary">
-            стоимость: {programPrice} uzs
-          </button>
+          <button className="button-primary">{programPrice} uzs</button>
           <button className="button-secondary">подробнее</button>
         </div>
       </div>
