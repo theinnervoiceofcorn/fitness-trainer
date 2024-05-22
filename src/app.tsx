@@ -1,13 +1,9 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { MainPage, Offer, PrivacyPolicy, ProgramPage } from "./pages";
+import { useNoHoverOnTouchDevices } from "./utils/use-no-hover";
 
 export const App = () => {
-  document.addEventListener("touchstart", function () {
-    document.body.classList.add("no-hover");
-  });
-  document.addEventListener("mousemove", function () {
-    document.body.classList.remove("no-hover");
-  });
+  useNoHoverOnTouchDevices();
 
   const router = createBrowserRouter([
     {

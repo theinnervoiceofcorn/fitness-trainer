@@ -17,15 +17,8 @@ body {
   overflow-x: hidden;
   background-color: var(--bg-color);
   font-family: "Poppins", "Roboto", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: var(--ft-sz);
-
-  &.no-hover button:hover {
-    background-color: inherit;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    transform: none;
-  }
 
   section {
     padding: 0 calc(7.5vw - 8px) calc(5vh + 10px);
@@ -34,4 +27,11 @@ body {
   h1 {
     font-size: calc(var(--ft-sz) * 1.75);
   }
+}
+
+body.no-hover button:hover {
+  background-color: inherit;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transform: none;
 }
