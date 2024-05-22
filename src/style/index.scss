@@ -27,4 +27,12 @@ body {
   h1 {
     font-size: calc(var(--ft-sz) * 1.75);
   }
+
+  input,
+  textarea,
+  button,
+  select,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
