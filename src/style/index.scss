@@ -28,10 +28,3 @@ body {
     font-size: calc(var(--ft-sz) * 1.75);
   }
 }
-
-body.no-hover button:hover {
-  background-color: inherit;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  transform: none;
-}

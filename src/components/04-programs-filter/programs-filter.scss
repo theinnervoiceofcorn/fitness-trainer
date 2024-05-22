@@ -17,14 +17,25 @@
     border-radius: 7.5px;
     transition: 300ms;
 
-    &:hover {
-      background-color: #ffffff;
-      color: #141414;
-      border: 2px solid #141414;
-      transform: scale(1.1);
+    @media (hover) {
+      &:hover {
+        background-color: #ffffff;
+        color: #141414;
+        border: 2px solid #141414;
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: scale(0.9);
+      }
     }
-    &:active {
-      transform: scale(0.9);
+
+    @media (hover: none) {
+      &:active {
+        background-color: #ffffff;
+        color: #141414;
+        border: 2px solid #141414;
+        transform: scale(1.1);
+      }
     }
   }
 
