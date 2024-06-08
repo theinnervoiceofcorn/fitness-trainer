@@ -1,0 +1,58 @@
+.programs-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.25vw;
+
+  .toggleAllCategories {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .categoryButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75vw;
+  }
+
+  // button {
+  //   cursor: pointer;
+  //   background-color: inherit;
+  //   min-width: max-content;
+  //   padding: 7.5px;
+  //   border: 2px solid #ffffff;
+  //   font-family: inherit;
+  //   font-size: inherit;
+  //   color: #ffffff;
+  //   border-radius: 7.5px;
+  //   transition: 300ms;
+
+  //   @media (hover) {
+  //     &:hover {
+  //       background-color: #ffffff;
+  //       color: #141414;
+  //       border: 2px solid #141414;
+  //       transform: scale(1.1);
+  //     }
+  //     &:active {
+  //       transform: scale(0.9);
+  //     }
+  //   }
+
+  //   @media (hover: none) {
+  //     &:active {
+  //       background-color: #ffffff;
+  //       color: #141414;
+  //       border: 2px solid #141414;
+  //       transform: scale(1.1);
+  //     }
+  //   }
+  // }
+
+  // button.active {
+  //   background-color: #ffffff;
+  //   color: #141414;
+  //   border: 2px solid #141414;
+  // }
+}

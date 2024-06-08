@@ -1,9 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "../../store/store";
+import { RootState } from "../../app/store";
 import { ProgramCard, ProgramsFilter } from "../../components";
-import { PROGRAMS_TYPE_A, PROGRAMS_TYPE_B, PROGRAMS_TYPE_C } from "./data";
 import "./programs.scss";
+import {
+  PROGRAMS_TYPE_A,
+  PROGRAMS_TYPE_B,
+  PROGRAMS_TYPE_C,
+} from "@/shared/constants/programsCardsData";
 
 export const Programs: React.FC = () => {
   const { selectedCategories, showAllCategories } = useSelector(
@@ -28,7 +32,9 @@ export const Programs: React.FC = () => {
           .map((card, index) => (
             <ProgramCard
               key={index}
+              id={card.id}
               className={card.className}
+              backgroundImage={card.backgroundImage}
               cardName={card.cardName}
               cardDescription={card.cardDescription}
               programPrice={card.programPrice}

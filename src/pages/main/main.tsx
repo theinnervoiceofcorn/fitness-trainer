@@ -1,4 +1,5 @@
-import { Footer, Navbar } from "../../components";
+import { Navbar } from "@/widgets";
+import { Footer } from "../../components";
 import { AboutProject, Header, Programs } from "../../containers";
 
 export const MainPage = () => {

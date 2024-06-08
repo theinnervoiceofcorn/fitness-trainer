@@ -7,7 +7,7 @@
 
   .card-bg {
     width: 100%;
-    height: 15vh;
+    height: 12.5vmax;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,21 +67,5 @@
         }
       }
     }
-  }
-}
-
-.A {
-  .card-bg {
-    background-image: url("../../assets/program-card__bg-1.jpg");
-  }
-}
-.B {
-  .card-bg {
-    background-image: url("../../assets/program-card__bg-2.jpg");
-  }
-}
-.C {
-  .card-bg {
-    background-image: url("../../assets/program-card__bg-3.jpg");
   }
 }

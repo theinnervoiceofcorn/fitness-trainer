@@ -10,20 +10,6 @@
   padding: 0 calc(7.5vw - 8px);
   background-color: transparentize($color: #1a1a1a, $amount: 0.1);
 
-  .logo {
-    cursor: pointer;
-    user-select: none;
-    font-size: calc(var(--ft-sz) * 1.25);
-    font-weight: 700;
-    transition: 300ms;
-    &:hover {
-      transform: scale(1.05);
-    }
-    &:active {
-      transform: scale(0.95);
-    }
-  }
-
   ul {
     display: flex;
     justify-content: space-between;

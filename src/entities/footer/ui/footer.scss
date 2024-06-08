@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5vw;
+  background-color: #1a1a1a;
+  padding: 6vh calc(7.5vw - 8px);
+
+  @media screen and (width < 768px) {
+    & {
+      align-items: center;
+      flex-direction: column;
+      padding: 3vh calc(7.5vw - 8px);
+    }
+  }
+
+  &__division {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    & > * {
+      cursor: pointer;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .logo {
+      cursor: pointer;
+      user-select: none;
+      font-size: calc(var(--ft-sz) * 1.25);
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1vw;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+}

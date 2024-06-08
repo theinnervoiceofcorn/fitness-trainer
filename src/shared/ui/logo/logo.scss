@@ -1,0 +1,13 @@
+.logo {
+  cursor: pointer;
+  user-select: none;
+  font-size: calc(var(--ft-sz) * 1.25);
+  font-weight: 700;
+  transition: 300ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}

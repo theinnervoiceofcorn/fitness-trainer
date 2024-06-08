@@ -1,14 +1,15 @@
+import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { MainPage, Offer, PrivacyPolicy, ProgramPage } from "./pages";
+import { MainPage, ProgramPage, Offer, PrivacyPolicy } from "@/pages";
 
-export const App = () => {
-  const router = createBrowserRouter([
+export const AppRouter: React.FC = () => {
+  const appRouterConfig = createBrowserRouter([
     {
       path: "/",
       element: <MainPage />,
     },
     {
-      path: "/program",
+      path: "/program/:id",
       element: <ProgramPage />,
     },
     {
@@ -21,5 +22,5 @@ export const App = () => {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={appRouterConfig} />;
 };
